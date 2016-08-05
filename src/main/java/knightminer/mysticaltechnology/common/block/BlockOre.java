@@ -26,7 +26,7 @@ public class BlockOre extends EnumBlock<BlockOre.OreType> {
 		setHarvestLevel(OreType.HEATSTONE, 2);
 		setHarvestLevel(OreType.WINDSTONE, 3);
 		setHarvestLevel(OreType.COLDSTONE, 2);
-		setHarvestLevel(OreType.UNNAMED_END_METAL, 3);
+		setHarvestLevel(OreType.VIBRANIUM, 3);
 		setHarvestLevel(OreType.COLDSILVER, 2);
 		//setHarvestLevel(OreType.?, 1);
 	}
@@ -51,13 +51,10 @@ public class BlockOre extends EnumBlock<BlockOre.OreType> {
 	}
 
 	public enum OreType implements IStringSerializable, EnumBlock.IEnumMeta {
-		// terrastone is emerald
 		HEATSTONE,
 		WINDSTONE,
 		COLDSTONE,
-		// terra metal is iron
-		// blaze metal is gold
-		UNNAMED_END_METAL,
+		VIBRANIUM,
 		COLDSILVER;
 		// TODO: extra myst ores
 		// basically, something similar to quartz, only most likely non-redstone functions

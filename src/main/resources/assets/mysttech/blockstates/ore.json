@@ -24,10 +24,10 @@
 					"overlay": "mysttech:blocks/ore_coldstone"
 				}
             },
-            "unnamed_end_metal": {
+            "ore_vibranium": {
                 "textures": {
 					"all": "minecraft:blocks/end_stone",
-					"overlay": "mysttech:blocks/ore_heatstone"
+					"overlay": "mysttech:blocks/ore_vibranium"
 				}
             },
             "coldsilver": {
