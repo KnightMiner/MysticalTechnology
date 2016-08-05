@@ -1,0 +1,41 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "transform": "forge:default-block",
+        "model": "mysttech:cube_overlay_all"
+    },
+	"variants": {
+        "type": {
+            "heatstone": {
+                "textures": {
+					"all": "minecraft:blocks/netherrack",
+					"overlay": "mysttech:blocks/ore_heatstone"
+				}
+            },
+            "windstone": {
+                "textures": {
+					"all": "minecraft:blocks/end_stone",
+					"overlay": "mysttech:blocks/ore_windstone"
+				}
+            },
+            "coldstone": {
+                "textures": {
+					"all": "mysttech:blocks/icestone",
+					"overlay": "mysttech:blocks/ore_coldstone"
+				}
+            },
+            "unnamed_end_metal": {
+                "textures": {
+					"all": "minecraft:blocks/end_stone",
+					"overlay": "mysttech:blocks/ore_heatstone"
+				}
+            },
+            "coldsilver": {
+                "textures": {
+					"all": "mysttech:blocks/icestone",
+					"overlay": "mysttech:blocks/ore_coldsilver"
+				}
+            }
+        }
+    }
+}

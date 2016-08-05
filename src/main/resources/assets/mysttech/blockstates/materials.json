@@ -1,0 +1,19 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "transform": "forge:default-item",
+        "model": "forge:item-layer"
+    },
+    "variants": {
+        "charged_lightstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_lightstone", "layer1": "mysttech:items/materials/charged_glow" }}],
+        "charged_voidstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_voidstone", "layer1": "mysttech:items/materials/charged_glow_dark" }}],
+        "charged_terrastone": [{ "textures": { "layer0": "mysttech:items/materials/charged_terrastone", "layer1": "mysttech:items/materials/charged_glow" }}],
+        "charged_blazestone": [{ "textures": { "layer0": "mysttech:items/materials/charged_blazestone", "layer1": "mysttech:items/materials/charged_glow" }}],
+        "charged_aerstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_aerstone", "layer1": "mysttech:items/materials/charged_glow" }}],
+        "charged_froststone": [{ "textures": { "layer0": "mysttech:items/materials/charged_froststone", "layer1": "mysttech:items/materials/charged_glow" }}],
+		
+        "heatstone": [{ "textures": { "layer0": "mysttech:items/materials/heatstone" }}],
+        "windstone": [{ "textures": { "layer0": "mysttech:items/materials/windstone" }}],
+        "coldstone": [{ "textures": { "layer0": "mysttech:items/materials/coldstone" }}]
+    }
+}

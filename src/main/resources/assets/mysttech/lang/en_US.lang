@@ -1,0 +1,29 @@
+##############################
+#           Blocks           #
+##############################
+
+tile.mysttech.ore.heatstone.name=Heatstone Ore
+tile.mysttech.ore.windstone.name=Windstone Ore
+tile.mysttech.ore.coldstone.name=Coldstone Ore
+tile.mysttech.ore.coldsilver.name=Coldsilver Ore
+
+##############################
+#           Items            #
+##############################
+
+item.mysttech.materials.charged_lightstone.name=Pure Lightstone
+item.mysttech.materials.charged_voidstone.name=Corrupted Voidstone
+item.mysttech.materials.charged_terrastone.name=Charged Terrastone
+item.mysttech.materials.charged_blazestone.name=Charged Blazestone
+item.mysttech.materials.charged_aerstone.name=Charged Aerstone
+item.mysttech.materials.charged_froststone.name=Charged Froststone
+
+item.mysttech.materials.heatstone.name=Heatstone
+item.mysttech.materials.windstone.name=Windstone
+item.mysttech.materials.coldstone.name=Coldstone
+
+##############################
+#           Misc             #
+##############################
+
+itemGroup.MystTechCommons=Mystical Technology

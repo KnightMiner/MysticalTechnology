@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mysttech",
+  "name": "Mystical Technology",
+  "description": "A Minecraft mod about harnessing the power of magic using technology",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["KnightMiner"],
+  "credits": "The SlimeKnights for usage of Mantle",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
