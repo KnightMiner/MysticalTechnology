@@ -1,0 +1,18 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "transform": "forge:default-block",
+        "model": "cube_all"
+    },
+	"variants": {
+        "type": {
+            "heatstone": { "textures": { "all": "mysttech:blocks/block_heatstone" } },
+            "windstone": { "textures": { "all": "mysttech:blocks/block_windstone" } },
+            "coldstone": { "textures": { "all": "mysttech:blocks/block_coldstone" } },
+            "vibranium": { "textures": { "all": "mysttech:blocks/block_vibranium" } },
+            "coldsilver": { "textures": { "all": "mysttech:blocks/block_coldsilver" } },
+            "lightmetal": { "textures": { "all": "mysttech:blocks/block_lightmetal" } },
+            "voidmetal": { "textures": { "all": "mysttech:blocks/block_voidmetal"} }
+        }
+    }
+}

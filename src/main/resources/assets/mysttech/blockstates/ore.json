@@ -24,7 +24,7 @@
 					"overlay": "mysttech:blocks/ore_coldstone"
 				}
             },
-            "ore_vibranium": {
+            "vibranium": {
                 "textures": {
 					"all": "minecraft:blocks/end_stone",
 					"overlay": "mysttech:blocks/ore_vibranium"

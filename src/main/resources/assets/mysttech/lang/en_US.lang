@@ -6,21 +6,67 @@ tile.mysttech.ore.heatstone.name=Heatstone Ore
 tile.mysttech.ore.windstone.name=Windstone Ore
 tile.mysttech.ore.coldstone.name=Coldstone Ore
 tile.mysttech.ore.coldsilver.name=Coldsilver Ore
+tile.mysttech.ore.vibranium.name=Vibranium Ore
+
+tile.mysttech.storage_block.heatstone.name=Heatstone Block
+tile.mysttech.storage_block.windstone.name=Windstone Block
+tile.mysttech.storage_block.coldstone.name=Coldstone Block
+tile.mysttech.storage_block.coldsilver.name=Coldsilver Block
+tile.mysttech.storage_block.vibranium.name=Vibranium Block
+tile.mysttech.storage_block.lightmetal.name=Lightmetal Block
+tile.mysttech.storage_block.voidmetal.name=Voidmetal Block
+
+tile.mysttech.laser.terra=Terra Laser
+tile.mysttech.laser.blaze=Blaze Laser
+tile.mysttech.laser.aer=Aer Laser
+tile.mysttech.laser.frost=Frost Laser
+tile.mysttech.laser.light=Pure Laser
+tile.mysttech.laser.void=Void Laser
+
+tile.mysttech.lense.terra=Terra Lense
+tile.mysttech.lense.blaze=Blaze Lense
+tile.mysttech.lense.aer=Aer Lense
+tile.mysttech.lense.frost=Frost Lense
+tile.mysttech.lense.light=Pure Lense
+tile.mysttech.lense.void=Void Lense
 
 ##############################
 #           Items            #
 ##############################
 
-item.mysttech.materials.charged_lightstone.name=Pure Lightstone
-item.mysttech.materials.charged_voidstone.name=Corrupted Voidstone
 item.mysttech.materials.charged_terrastone.name=Charged Terrastone
 item.mysttech.materials.charged_blazestone.name=Charged Blazestone
 item.mysttech.materials.charged_aerstone.name=Charged Aerstone
 item.mysttech.materials.charged_froststone.name=Charged Froststone
+item.mysttech.materials.charged_lightstone.name=Pure Lightstone
+item.mysttech.materials.charged_voidstone.name=Corrupted Voidstone
 
 item.mysttech.materials.heatstone.name=Heatstone
 item.mysttech.materials.windstone.name=Windstone
 item.mysttech.materials.coldstone.name=Coldstone
+
+item.mysttech.materials.rod_terra.name=Terra Rod
+item.mysttech.materials.rod_aer.name=Aer Rod
+item.mysttech.materials.rod_frost.name=Frost Rod
+item.mysttech.materials.rod_light.name=Light Rod
+item.mysttech.materials.rod_void.name=Void Rod
+
+item.mysttech.materials.powder_terra.name=Terra Powder
+item.mysttech.materials.powder_aer.name=Aer Powder
+item.mysttech.materials.powder_frost.name=Frost Powder
+item.mysttech.materials.powder_light.name=Light Powder
+item.mysttech.materials.powder_void.name=Void Powder
+
+item.mysttech.materials.ingot_vibranium.name=Vibranium Ingot
+item.mysttech.materials.ingot_coldsilver.name=Coldsilver Ingot
+item.mysttech.materials.ingot_lightmetal.name=Lightmetal Ingot
+item.mysttech.materials.ingot_voidmetal.name=Voidmetal Ingot
+
+item.mysttech.materials.nugget_vibranium.name=Vibranium Nugget
+item.mysttech.materials.nugget_coldsilver.name=Coldsilver Nugget
+item.mysttech.materials.nugget_lightmetal.name=Lightmetal Nugget
+item.mysttech.materials.nugget_voidmetal.name=Voidmetal Nugget
+item.mysttech.materials.nugget_iron.name=Iron Nugget
 
 ##############################
 #           Misc             #

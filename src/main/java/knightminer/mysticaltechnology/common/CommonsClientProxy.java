@@ -9,5 +9,6 @@ public class CommonsClientProxy extends ClientProxy {
 		MystTechCommons.materials.registerItemModels();
 
 		registerItemBlockMeta(MystTechCommons.blockOre);
+		registerItemBlockMeta(MystTechCommons.blockStorage);
 	}
 }

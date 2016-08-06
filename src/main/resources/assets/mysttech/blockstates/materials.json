@@ -5,15 +5,38 @@
         "model": "forge:item-layer"
     },
     "variants": {
-        "charged_lightstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_lightstone", "layer1": "mysttech:items/materials/charged_glow" }}],
-        "charged_voidstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_voidstone", "layer1": "mysttech:items/materials/charged_glow_dark" }}],
         "charged_terrastone": [{ "textures": { "layer0": "mysttech:items/materials/charged_terrastone", "layer1": "mysttech:items/materials/charged_glow" }}],
         "charged_blazestone": [{ "textures": { "layer0": "mysttech:items/materials/charged_blazestone", "layer1": "mysttech:items/materials/charged_glow" }}],
         "charged_aerstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_aerstone", "layer1": "mysttech:items/materials/charged_glow" }}],
         "charged_froststone": [{ "textures": { "layer0": "mysttech:items/materials/charged_froststone", "layer1": "mysttech:items/materials/charged_glow" }}],
+        "charged_lightstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_lightstone", "layer1": "mysttech:items/materials/charged_glow" }}],
+        "charged_voidstone": [{ "textures": { "layer0": "mysttech:items/materials/charged_voidstone", "layer1": "mysttech:items/materials/charged_glow_dark" }}],
 		
         "heatstone": [{ "textures": { "layer0": "mysttech:items/materials/heatstone" }}],
         "windstone": [{ "textures": { "layer0": "mysttech:items/materials/windstone" }}],
-        "coldstone": [{ "textures": { "layer0": "mysttech:items/materials/coldstone" }}]
+        "coldstone": [{ "textures": { "layer0": "mysttech:items/materials/coldstone" }}],
+		
+        "rod_terra": [{ "textures": { "layer0": "mysttech:items/materials/rod_terra" }}],
+        "rod_aer": [{ "textures": { "layer0": "mysttech:items/materials/rod_aer" }}],
+        "rod_frost": [{ "textures": { "layer0": "mysttech:items/materials/rod_frost" }}],
+        "rod_light": [{ "textures": { "layer0": "mysttech:items/materials/rod_light" }}],
+        "rod_void": [{ "textures": { "layer0": "mysttech:items/materials/rod_void" }}],
+		
+        "powder_terra": [{ "textures": { "layer0": "mysttech:items/materials/powder_terra" }}],
+        "powder_aer": [{ "textures": { "layer0": "mysttech:items/materials/powder_aer" }}],
+        "powder_frost": [{ "textures": { "layer0": "mysttech:items/materials/powder_frost" }}],
+        "powder_light": [{ "textures": { "layer0": "mysttech:items/materials/powder_light" }}],
+        "powder_void": [{ "textures": { "layer0": "mysttech:items/materials/powder_void" }}],
+		
+        "ingot_vibranium": [{ "textures": { "layer0": "mysttech:items/materials/ingot_vibranium" }}],
+        "ingot_coldsilver": [{ "textures": { "layer0": "mysttech:items/materials/ingot_coldsilver" }}],
+        "ingot_lightmetal": [{ "textures": { "layer0": "mysttech:items/materials/ingot_lightmetal" }}],
+        "ingot_voidmetal": [{ "textures": { "layer0": "mysttech:items/materials/ingot_voidmetal" }}],
+
+        "nugget_vibranium": [{ "textures": { "layer0": "mysttech:items/materials/nugget_vibranium" }}],
+        "nugget_coldsilver": [{ "textures": { "layer0": "mysttech:items/materials/nugget_coldsilver" }}],
+        "nugget_lightmetal": [{ "textures": { "layer0": "mysttech:items/materials/nugget_lightmetal" }}],
+        "nugget_voidmetal": [{ "textures": { "layer0": "mysttech:items/materials/nugget_voidmetal" }}],
+        "nugget_iron": [{ "textures": { "layer0": "mysttech:items/materials/nugget_iron" }}]
     }
 }
