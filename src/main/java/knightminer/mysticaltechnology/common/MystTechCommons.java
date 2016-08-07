@@ -150,6 +150,8 @@ public class MystTechCommons extends MystTechPulse {
 		GameRegistry.addRecipe(new ShapedOreRecipe(chargedAerstone.copy(), PAT_CHARGE, 'p', powderAer, 's', windstone));
 		GameRegistry.addRecipe(new ShapedOreRecipe(chargedFroststone.copy(), PAT_CHARGE, 'p', powderFrost, 's', coldstone));
 
+		// TODO: should I allow this at all or require the infusor
+		// void at least will need it to obtain lasers
 		// GameRegistry.addRecipe(new ShapedOreRecipe(chargedLightstone.copy(), PAT_CHARGE, 'p', powderLight, 's', "gemElemental"));
 		// GameRegistry.addRecipe(new ShapelessOreRecipe(chargedLightstone.copy(), powderTerra, Items.BLAZE_POWDER, powderAer, powderFrost, powderFrost, "gemElemental"));
 
