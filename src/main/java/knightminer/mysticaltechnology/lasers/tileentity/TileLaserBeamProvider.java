@@ -2,7 +2,6 @@ package knightminer.mysticaltechnology.lasers.tileentity;
 
 import javax.annotation.Nullable;
 
-import knightminer.mysticaltechnology.MysticalTechnology;
 import knightminer.mysticaltechnology.lasers.MystTechLasers;
 import knightminer.mysticaltechnology.library.element.EnumElement;
 import net.minecraft.block.state.IBlockState;
@@ -65,7 +64,6 @@ public abstract class TileLaserBeamProvider extends TileFacing {
 	public void removeLaser(EnumFacing direction, BlockPos startPos, BlockPos endPos) {
 		TileEntity te = worldObj.getTileEntity(endPos);
 		if(te instanceof TileLense) {
-			MysticalTechnology.log.info("Updating lense");
 			((TileLense)te).setLaser(false);
 		}
 
@@ -74,12 +72,10 @@ public abstract class TileLaserBeamProvider extends TileFacing {
 
 			// we double check that its air since a likely cause for removing a laser is a block placed in the way
 			if(worldObj.getBlockState(pos).getBlock() == MystTechLasers.laserBeam) {
-				MysticalTechnology.log.info("Not air");
 				worldObj.setBlockToAir(pos);
 			}
 			pos = pos.offset(direction);
 			if(pos.equals(endPos)) {
-				MysticalTechnology.log.info("Equal position");
 				break;
 			}
 		}
