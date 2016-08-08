@@ -1,0 +1,18 @@
+{
+    "parent": "mysttech:block/cube_overlay",
+	"textures": {
+		"particle": "#front",
+		"down": "#back",
+		"up": "#front",
+		"north": "#side",
+		"south": "#side",
+		"west": "#side",
+		"east": "#side",
+		"downOverlay": "#frontOverlay",
+		"upOverlay": "#backOverlay",
+		"northOverlay": "#sideOverlay",
+		"southOverlay": "#sideOverlay",
+		"westOverlay": "#sideOverlay",
+		"eastOverlay": "#sideOverlay"
+	}
+}

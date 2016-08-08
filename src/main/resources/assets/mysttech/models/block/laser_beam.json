@@ -1,0 +1,32 @@
+{
+    "textures": {
+        "particle": "mysttech:blocks/laser_beam",
+        "laser": "mysttech:blocks/laser_beam"
+    },
+    "elements": [
+        {
+            "__comment": "Laser",
+            "from": [ 7, 7, -6 ], 
+            "to": [ 9, 9, 10 ], 
+            "faces": {
+                "north": { "texture": "#laser", "uv": [ 13, 13, 15, 15 ], "tintindex": 0, "cullface": "north" },
+                "east":  { "texture": "#laser", "uv": [  0,  0,  2, 16 ], "tintindex": 0, "rotation": 90 },
+                "west":  { "texture": "#laser", "uv": [  0,  0,  2, 16 ], "tintindex": 0, "rotation": 270 },
+                "up":    { "texture": "#laser", "uv": [  0,  0,  2, 16 ], "tintindex": 0 },
+                "down":  { "texture": "#laser", "uv": [  0,  0,  2, 16 ], "tintindex": 0, "rotation": 180 }
+            }
+        },
+        {
+            "__comment": "Glow",
+            "from": [ 6, 6, -8 ], 
+            "to": [ 10, 10, 8 ], 
+            "faces": {
+                "north": { "texture": "#laser", "uv": [ 12, 0, 16,  4 ], "tintindex": 0, "cullface": "north" },
+                "east":  { "texture": "#laser", "uv": [  6, 0, 10, 16 ], "tintindex": 0, "rotation": 90 },
+                "west":  { "texture": "#laser", "uv": [  6, 0, 10, 16 ], "tintindex": 0, "rotation": 270 },
+                "up":    { "texture": "#laser", "uv": [  6, 0, 10, 16 ], "tintindex": 0 },
+                "down":  { "texture": "#laser", "uv": [  6, 0, 10, 16 ], "tintindex": 0, "rotation": 180 }
+            }
+        }
+    ]
+}

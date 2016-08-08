@@ -15,6 +15,7 @@ import knightminer.mysticaltechnology.lasers.tileentity.TileLense;
 import knightminer.mysticaltechnology.library.Util;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import slimeknights.mantle.pulsar.pulse.Pulse;
 
@@ -34,14 +35,19 @@ public class MystTechLasers extends MystTechPulse {
 
 	@Subscribe
 	public void preInit(FMLPreInitializationEvent event) {
-		laser = registerBlock(new BlockLaser(), "laser");
-		laserBeam = registerBlock(new BlockLaserBeam(), "laser_beam");
-		lense = registerBlock(new BlockLense(), "lense");
+		laser = registerEnumBlock(new BlockLaser(), "laser");
+		laserBeam = registerBlockNoItem(new BlockLaserBeam(), "laser_beam");
+		lense = registerEnumBlock(new BlockLense(), "lense");
 
 		registerTileEntity(TileLaser.class, "laser");
 		registerTileEntity(TileLaserBeam.class, "laser_beam");
 		registerTileEntity(TileLense.class, "lense");
 
 		proxy.preInit();
+	}
+
+	@Subscribe
+	public void init(FMLInitializationEvent event) {
+		proxy.init();
 	}
 }

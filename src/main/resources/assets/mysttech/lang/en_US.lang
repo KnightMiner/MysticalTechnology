@@ -16,19 +16,19 @@ tile.mysttech.storage_block.vibranium.name=Vibranium Block
 tile.mysttech.storage_block.lightmetal.name=Lightmetal Block
 tile.mysttech.storage_block.voidmetal.name=Voidmetal Block
 
-tile.mysttech.laser.terra=Terra Laser
-tile.mysttech.laser.blaze=Blaze Laser
-tile.mysttech.laser.aer=Aer Laser
-tile.mysttech.laser.frost=Frost Laser
-tile.mysttech.laser.light=Pure Laser
-tile.mysttech.laser.void=Void Laser
+tile.mysttech.laser.terra.name=Terra Laser
+tile.mysttech.laser.blaze.name=Blaze Laser
+tile.mysttech.laser.aer.name=Aer Laser
+tile.mysttech.laser.frost.name=Frost Laser
+tile.mysttech.laser.light.name=Pure Laser
+tile.mysttech.laser.void.name=Void Laser
 
-tile.mysttech.lense.terra=Terra Lense
-tile.mysttech.lense.blaze=Blaze Lense
-tile.mysttech.lense.aer=Aer Lense
-tile.mysttech.lense.frost=Frost Lense
-tile.mysttech.lense.light=Pure Lense
-tile.mysttech.lense.void=Void Lense
+tile.mysttech.lense.terra.name=Terra Lense
+tile.mysttech.lense.blaze.name=Blaze Lense
+tile.mysttech.lense.aer.name=Aer Lense
+tile.mysttech.lense.frost.name=Frost Lense
+tile.mysttech.lense.light.name=Pure Lense
+tile.mysttech.lense.void.name=Void Lense
 
 ##############################
 #           Items            #

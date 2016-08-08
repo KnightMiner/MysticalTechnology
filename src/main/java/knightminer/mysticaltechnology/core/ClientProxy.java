@@ -1,9 +1,13 @@
 package knightminer.mysticaltechnology.core;
 
+import javax.annotation.Nonnull;
+
 import knightminer.mysticaltechnology.MysticalTechnology;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import slimeknights.mantle.item.ItemBlockMeta;
@@ -38,6 +42,14 @@ public class ClientProxy extends CommonProxy {
 	}
 
 	private static ResourceLocation registerIt(Item item, final ResourceLocation location) {
+		ModelLoader.setCustomMeshDefinition(item, new ItemMeshDefinition() {
+			@Nonnull
+			@Override
+			public ModelResourceLocation getModelLocation(@Nonnull ItemStack stack) {
+				return new ModelResourceLocation(location, "inventory");
+			}
+		});
+
 		ModelLoader.registerItemVariants(item, location);
 
 		return location;

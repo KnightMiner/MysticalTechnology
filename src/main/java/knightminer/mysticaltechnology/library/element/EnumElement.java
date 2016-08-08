@@ -1,4 +1,4 @@
-package knightminer.mysticaltechnology.library;
+package knightminer.mysticaltechnology.library.element;
 
 import java.util.Locale;
 

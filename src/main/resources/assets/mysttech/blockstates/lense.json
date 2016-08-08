@@ -1,0 +1,26 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "transform": "forge:default-block",
+        "model": "mysttech:cube_overlay_directional",
+		"textures": {
+			"front": "mysttech:blocks/lense_front",
+			"side": "mysttech:blocks/lense_side",
+			"back": "mysttech:blocks/lense_back",
+			"frontOverlay": "mysttech:blocks/laser_metal",
+			"sideOverlay": "mysttech:blocks/laser_metal",
+			"backOverlay": "mysttech:blocks/laser_metal"
+		}
+    },
+	"variants": {
+        "facing": {
+			"north": { "x": 90 },
+			"south": { "x": 90, "y": 180 },
+			"west": { "x": 90, "y": 270 },
+			"east": { "x": 90, "y": 90 },
+			"up": {},
+			"down": { "x": 180 }
+		},
+		"inventory": [{}]
+    }
+}
