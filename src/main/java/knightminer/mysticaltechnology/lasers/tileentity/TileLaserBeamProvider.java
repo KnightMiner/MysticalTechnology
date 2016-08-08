@@ -2,6 +2,7 @@ package knightminer.mysticaltechnology.lasers.tileentity;
 
 import javax.annotation.Nullable;
 
+import knightminer.mysticaltechnology.MysticalTechnology;
 import knightminer.mysticaltechnology.lasers.MystTechLasers;
 import knightminer.mysticaltechnology.library.element.EnumElement;
 import net.minecraft.block.state.IBlockState;
@@ -62,26 +63,28 @@ public abstract class TileLaserBeamProvider extends TileFacing {
 	}
 
 	public void removeLaser(EnumFacing direction, BlockPos startPos, BlockPos endPos) {
-		if(this.getTarget(direction) != null) {
-			TileEntity te = worldObj.getTileEntity(getTarget(direction));
-			if(te instanceof TileLense) {
-				((TileLense)te).setLaser(false);
-			}
-			setTarget(direction, null);
+		TileEntity te = worldObj.getTileEntity(endPos);
+		if(te instanceof TileLense) {
+			MysticalTechnology.log.info("Updating lense");
+			((TileLense)te).setLaser(false);
 		}
 
 		BlockPos pos = startPos;
 		for(int i = 0; i < maxDistance; i++) {
 
 			// we double check that its air since a likely cause for removing a laser is a block placed in the way
-			if(worldObj.getBlockState(pos).getBlock().equals(MystTechLasers.laserBeam)) {
+			if(worldObj.getBlockState(pos).getBlock() == MystTechLasers.laserBeam) {
+				MysticalTechnology.log.info("Not air");
 				worldObj.setBlockToAir(pos);
 			}
-			pos.offset(direction);
+			pos = pos.offset(direction);
 			if(pos.equals(endPos)) {
+				MysticalTechnology.log.info("Equal position");
 				break;
 			}
 		}
+
+		setTarget(direction, null);
 	}
 
 	/**
@@ -104,7 +107,7 @@ public abstract class TileLaserBeamProvider extends TileFacing {
 	 */
 	public BlockPos getLaserEnd(EnumFacing direction) {
 		if(hasTarget(direction)) {
-			return getTarget(direction).offset(direction.getOpposite());
+			return getTarget(direction);
 		}
 
 		return this.pos.offset(direction, maxDistance);

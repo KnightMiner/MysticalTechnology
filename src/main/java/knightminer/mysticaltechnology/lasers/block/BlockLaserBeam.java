@@ -82,6 +82,11 @@ public class BlockLaserBeam extends BlockElementFacing {
 	}
 
 	@Override
+	public AxisAlignedBB getCollisionBoundingBox(IBlockState state, World worldIn, BlockPos pos) {
+		return NULL_AABB;
+	}
+
+	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
 		return BlockRenderLayer.TRANSLUCENT;
