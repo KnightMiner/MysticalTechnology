@@ -1,4 +1,3 @@
-
 // For those who want the bleeding edge
 buildscript {
     repositories {
@@ -75,5 +74,12 @@ processResources {
     // copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
+    }
+}
+
+// Add Access Transformers Manifest
+jar {
+    manifest {
+        attributes 'FMLAT': 'mysttech_at.cfg'
     }
 }

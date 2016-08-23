@@ -8,7 +8,8 @@
         "type": {
             "heatstone": { "textures": { "all": "mysttech:blocks/block_heatstone" } },
             "windstone": { "textures": { "all": "mysttech:blocks/block_windstone" } },
-            "coldstone": { "textures": { "all": "mysttech:blocks/block_coldstone" } },
+            "icestone": { "textures": { "all": "mysttech:blocks/block_icestone" } },
+            "flamesteel": { "textures": { "all": "mysttech:blocks/block_flamesteel" } },
             "vibranium": { "textures": { "all": "mysttech:blocks/block_vibranium" } },
             "coldsilver": { "textures": { "all": "mysttech:blocks/block_coldsilver" } },
             "lightmetal": { "textures": { "all": "mysttech:blocks/block_lightmetal" } },

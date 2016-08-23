@@ -36,7 +36,7 @@ public class BlockOre extends EnumBlock<BlockOre.OreType> {
 		// harvest levels
 		setHarvestLevel(OreType.HEATSTONE, 2);
 		setHarvestLevel(OreType.WINDSTONE, 3);
-		setHarvestLevel(OreType.COLDSTONE, 2);
+		setHarvestLevel(OreType.ICESTONE, 2);
 		setHarvestLevel(OreType.VIBRANIUM, 3);
 		setHarvestLevel(OreType.COLDSILVER, 2);
 		//setHarvestLevel(OreType.?, 1);
@@ -56,7 +56,7 @@ public class BlockOre extends EnumBlock<BlockOre.OreType> {
 	@Nullable
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		switch(state.getValue(TYPE)) {
-			case HEATSTONE: case WINDSTONE: case COLDSTONE:
+			case HEATSTONE: case WINDSTONE: case ICESTONE:
 				return MystTechCommons.materials;
 		}
 
@@ -71,8 +71,8 @@ public class BlockOre extends EnumBlock<BlockOre.OreType> {
 				return MystTechCommons.heatstone.getItemDamage();
 			case WINDSTONE:
 				return MystTechCommons.windstone.getItemDamage();
-			case COLDSTONE:
-				return MystTechCommons.coldstone.getItemDamage();
+			case ICESTONE:
+				return MystTechCommons.icestone.getItemDamage();
 		}
 
 		return state.getValue(TYPE).getMeta();
@@ -125,7 +125,8 @@ public class BlockOre extends EnumBlock<BlockOre.OreType> {
 	public enum OreType implements IStringSerializable, EnumBlock.IEnumMeta {
 		HEATSTONE,
 		WINDSTONE,
-		COLDSTONE,
+		ICESTONE,
+		FLAMESTEEL,
 		VIBRANIUM,
 		COLDSILVER;
 		// TODO: extra myst ores

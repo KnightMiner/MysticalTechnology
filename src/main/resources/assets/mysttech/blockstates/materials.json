@@ -14,7 +14,7 @@
 		
         "heatstone": [{ "textures": { "layer0": "mysttech:items/materials/heatstone" }}],
         "windstone": [{ "textures": { "layer0": "mysttech:items/materials/windstone" }}],
-        "coldstone": [{ "textures": { "layer0": "mysttech:items/materials/coldstone" }}],
+        "icestone": [{ "textures": { "layer0": "mysttech:items/materials/icestone" }}],
 		
         "rod_terra": [{ "textures": { "layer0": "mysttech:items/materials/rod_terra" }}],
         "rod_aer": [{ "textures": { "layer0": "mysttech:items/materials/rod_aer" }}],
@@ -28,11 +28,13 @@
         "powder_light": [{ "textures": { "layer0": "mysttech:items/materials/powder_light" }}],
         "powder_void": [{ "textures": { "layer0": "mysttech:items/materials/powder_void" }}],
 		
+        "ingot_flamesteel": [{ "textures": { "layer0": "mysttech:items/materials/ingot_flamesteel" }}],
         "ingot_vibranium": [{ "textures": { "layer0": "mysttech:items/materials/ingot_vibranium" }}],
         "ingot_coldsilver": [{ "textures": { "layer0": "mysttech:items/materials/ingot_coldsilver" }}],
         "ingot_lightmetal": [{ "textures": { "layer0": "mysttech:items/materials/ingot_lightmetal" }}],
         "ingot_voidmetal": [{ "textures": { "layer0": "mysttech:items/materials/ingot_voidmetal" }}],
 
+        "nugget_flamesteel": [{ "textures": { "layer0": "mysttech:items/materials/nugget_flamesteel" }}],
         "nugget_vibranium": [{ "textures": { "layer0": "mysttech:items/materials/nugget_vibranium" }}],
         "nugget_coldsilver": [{ "textures": { "layer0": "mysttech:items/materials/nugget_coldsilver" }}],
         "nugget_lightmetal": [{ "textures": { "layer0": "mysttech:items/materials/nugget_lightmetal" }}],

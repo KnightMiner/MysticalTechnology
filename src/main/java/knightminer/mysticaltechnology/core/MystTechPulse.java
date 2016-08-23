@@ -18,6 +18,13 @@ public class MystTechPulse {
 		return MysticalTechnology.pulseManager.isPulseLoaded(MystTechLasers.pulseID);
 	}
 
+	protected static boolean isMystLoaded() {
+		// TODO: incomplete, just here for compat so far
+		// basically, a few things will act differently if the myst is not loaded to compensate
+		//return MysticalTechnology.pulseManager.isPulseLoaded(MystTechMyst.pulseID);
+		return false;
+	}
+
 	/* Blocks */
 	protected static <T extends Block> T registerBlock(T block, String name) {
 		ItemBlock itemBlock = new ItemBlockMeta(block);

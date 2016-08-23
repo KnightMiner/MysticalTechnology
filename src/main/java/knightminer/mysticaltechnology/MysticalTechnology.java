@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import knightminer.mysticaltechnology.common.MystTechCommons;
+import knightminer.mysticaltechnology.core.MystTechOredict;
 import knightminer.mysticaltechnology.core.config.Config;
 import knightminer.mysticaltechnology.lasers.MystTechLasers;
 import knightminer.mysticaltechnology.library.Util;
@@ -46,6 +47,7 @@ public class MysticalTechnology {
 	static {
 		pulseManager.registerPulse(new MystTechCommons());
 		pulseManager.registerPulse(new MystTechLasers());
+		pulseManager.registerPulse(new MystTechOredict());
 	}
 
 	@Mod.EventHandler

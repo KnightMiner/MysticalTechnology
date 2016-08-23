@@ -24,7 +24,8 @@ public class BlockStorage extends EnumBlock<BlockStorage.StorageType> {
 	public enum StorageType implements IStringSerializable, EnumBlock.IEnumMeta {
 		HEATSTONE,
 		WINDSTONE,
-		COLDSTONE,
+		ICESTONE,
+		FLAMESTEEL,
 		VIBRANIUM,
 		COLDSILVER,
 		LIGHTMETAL,

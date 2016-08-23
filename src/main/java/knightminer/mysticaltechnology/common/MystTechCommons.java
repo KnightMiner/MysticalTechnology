@@ -6,9 +6,13 @@ import org.apache.logging.log4j.Logger;
 
 import com.google.common.eventbus.Subscribe;
 
+import knightminer.mysticaltechnology.MysticalTechnology;
 import knightminer.mysticaltechnology.common.block.BlockOre;
 import knightminer.mysticaltechnology.common.block.BlockStorage;
+import knightminer.mysticaltechnology.common.entity.EntityElementalFireball;
+import knightminer.mysticaltechnology.common.entity.EntityVenom;
 import knightminer.mysticaltechnology.core.CommonProxy;
+import knightminer.mysticaltechnology.core.EntityIDs;
 import knightminer.mysticaltechnology.core.MystTechPulse;
 import knightminer.mysticaltechnology.library.MystTechRegistry;
 import knightminer.mysticaltechnology.library.Util;
@@ -17,6 +21,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import slimeknights.mantle.item.ItemMetaDynamic;
@@ -48,7 +53,7 @@ public class MystTechCommons extends MystTechPulse {
 
 	public static ItemStack heatstone;
 	public static ItemStack windstone;
-	public static ItemStack coldstone;
+	public static ItemStack icestone;
 
 	public static ItemStack rodTerra;
 	public static ItemStack rodAer;
@@ -62,11 +67,13 @@ public class MystTechCommons extends MystTechPulse {
 	public static ItemStack powderLight;
 	public static ItemStack powderVoid;
 
+	public static ItemStack ingotFlamesteel;
 	public static ItemStack ingotVibranium;
 	public static ItemStack ingotColdsilver;
 	public static ItemStack ingotLightmetal;
 	public static ItemStack ingotVoidmetal;
 
+	public static ItemStack nuggetFlamesteel;
 	public static ItemStack nuggetVibranium;
 	public static ItemStack nuggetColdsilver;
 	public static ItemStack nuggetLightmetal;
@@ -92,7 +99,7 @@ public class MystTechCommons extends MystTechPulse {
 		// ore stones
 		heatstone = materials.addMeta(6, "heatstone");
 		windstone = materials.addMeta(7, "windstone");
-		coldstone = materials.addMeta(8, "coldstone");
+		icestone = materials.addMeta(8, "icestone");
 
 		// rods
 		rodTerra = materials.addMeta(10, "rod_terra");
@@ -109,17 +116,23 @@ public class MystTechCommons extends MystTechPulse {
 		powderVoid = materials.addMeta(19, "powder_void");
 
 		// ingots
-		ingotVibranium = materials.addMeta(20, "ingot_vibranium");
-		ingotColdsilver = materials.addMeta(21, "ingot_coldsilver");
-		ingotLightmetal = materials.addMeta(22, "ingot_lightmetal");
-		ingotVoidmetal = materials.addMeta(23, "ingot_voidmetal");
+		ingotFlamesteel = materials.addMeta(20, "ingot_flamesteel");
+		ingotVibranium = materials.addMeta(21, "ingot_vibranium");
+		ingotColdsilver = materials.addMeta(22, "ingot_coldsilver");
+		ingotLightmetal = materials.addMeta(23, "ingot_lightmetal");
+		ingotVoidmetal = materials.addMeta(24, "ingot_voidmetal");
 
 		// nuggets
-		nuggetVibranium = materials.addMeta(25, "nugget_vibranium");
-		nuggetColdsilver = materials.addMeta(26, "nugget_coldsilver");
-		nuggetLightmetal = materials.addMeta(27, "nugget_lightmetal");
-		nuggetVoidmetal = materials.addMeta(28, "nugget_voidmetal");
-		nuggetIron = materials.addMeta(29, "nugget_iron");
+		nuggetFlamesteel = materials.addMeta(25, "nugget_flamesteel");
+		nuggetVibranium = materials.addMeta(26, "nugget_vibranium");
+		nuggetColdsilver = materials.addMeta(27, "nugget_coldsilver");
+		nuggetLightmetal = materials.addMeta(28, "nugget_lightmetal");
+		nuggetVoidmetal = materials.addMeta(29, "nugget_voidmetal");
+		nuggetIron = materials.addMeta(30, "nugget_iron");
+
+		EntityRegistry.registerModEntity(EntityVenom.class, "venom", EntityIDs.VENOM, MysticalTechnology.instance, 64, 5, true, 0x47eff5, 0xacfff4);
+		EntityRegistry.registerModEntity(EntityElementalFireball.class, "elemental_fireball", EntityIDs.ELEMENTAL_FIREBALL, MysticalTechnology.instance, 64, 1, true);
+		// TODO: loot tables
 
 		proxy.preInit();
 	}
@@ -137,18 +150,18 @@ public class MystTechCommons extends MystTechPulse {
 
 		GameRegistry.addSmelting(new ItemStack(blockOre, 1, BlockOre.OreType.HEATSTONE.getMeta()), heatstone.copy(), 1f);
 		GameRegistry.addSmelting(new ItemStack(blockOre, 1, BlockOre.OreType.WINDSTONE.getMeta()), windstone.copy(), 1f);
-		GameRegistry.addSmelting(new ItemStack(blockOre, 1, BlockOre.OreType.COLDSTONE.getMeta()), coldstone.copy(), 1f);
+		GameRegistry.addSmelting(new ItemStack(blockOre, 1, BlockOre.OreType.ICESTONE.getMeta()), icestone.copy(), 1f);
 
 		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.HEATSTONE.getMeta()), heatstone, null);
 		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.WINDSTONE.getMeta()), windstone, null);
-		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.COLDSTONE.getMeta()), coldstone, null);
+		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.ICESTONE.getMeta()), icestone, null);
 
 		// charging stones
-		// TODO: oredict
+		// TODO: oredict, need a name others are likely to use (mainly for frost)
 		GameRegistry.addRecipe(new ShapedOreRecipe(chargedTerrastone.copy(), PAT_CHARGE, 'p', powderTerra, 's', Items.EMERALD));
 		GameRegistry.addRecipe(new ShapedOreRecipe(chargedBlazestone.copy(), PAT_CHARGE, 'p', Items.BLAZE_POWDER, 's', heatstone));
 		GameRegistry.addRecipe(new ShapedOreRecipe(chargedAerstone.copy(), PAT_CHARGE, 'p', powderAer, 's', windstone));
-		GameRegistry.addRecipe(new ShapedOreRecipe(chargedFroststone.copy(), PAT_CHARGE, 'p', powderFrost, 's', coldstone));
+		GameRegistry.addRecipe(new ShapedOreRecipe(chargedFroststone.copy(), PAT_CHARGE, 'p', powderFrost, 's', icestone));
 
 		// TODO: should I allow this at all or require the infusor
 		// void at least will need it to obtain lasers
@@ -165,13 +178,16 @@ public class MystTechCommons extends MystTechPulse {
 		addPowderRecipe(powderVoid, rodVoid);
 
 		// metals
+		GameRegistry.addSmelting(new ItemStack(blockOre, 1, BlockOre.OreType.FLAMESTEEL.getMeta()), ingotFlamesteel.copy(), 0.8f);
 		GameRegistry.addSmelting(new ItemStack(blockOre, 1, BlockOre.OreType.VIBRANIUM.getMeta()), ingotVibranium.copy(), 1f);
 		GameRegistry.addSmelting(new ItemStack(blockOre, 1, BlockOre.OreType.COLDSILVER.getMeta()), ingotColdsilver.copy(), 0.7f);
+
+		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.FLAMESTEEL.getMeta()), ingotFlamesteel, nuggetFlamesteel);
 		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.VIBRANIUM.getMeta()), ingotVibranium, nuggetVibranium);
 		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.COLDSILVER.getMeta()), ingotColdsilver, nuggetColdsilver);
 		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.LIGHTMETAL.getMeta()), ingotLightmetal, nuggetLightmetal);
 		addMetalRecipes(new ItemStack(blockStorage, 1, BlockStorage.StorageType.VOIDMETAL.getMeta()), ingotVoidmetal, nuggetVoidmetal);
-		addMetalRecipes(null, new ItemStack(Items.IRON_INGOT), nuggetIron);
+		addMetalRecipes(null, new ItemStack(Items.IRON_INGOT), nuggetIron); // block recipes added in vanilla
 	}
 
 	private void addPowderRecipe(ItemStack powder, ItemStack rod) {
